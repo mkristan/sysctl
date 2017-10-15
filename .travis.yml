@@ -37,6 +37,15 @@ env:
   - INSTANCE=attributes-ubuntu-1404
   - INSTANCE=attributes-ubuntu-1604
   - INSTANCE=attributes-opensuse-leap
+  - INSTANCE=attributes-conf-file-amazonlinux
+  - INSTANCE=attributes-conf-file-centos-6
+  - INSTANCE=attributes-conf-file-centos-7
+  - INSTANCE=attributes-conf-file-debian-7
+  - INSTANCE=attributes-conf-file-debian-8
+  - INSTANCE=attributes-conf-file-fedora-latest
+  - INSTANCE=attributes-conf-file-ubuntu-1404
+  - INSTANCE=attributes-conf-file-ubuntu-1604
+  - INSTANCE=attributes-conf-file-opensuse-leap
 
 before_script:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )

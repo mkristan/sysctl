@@ -41,5 +41,3 @@ describe 'sysctl::default' do
     end
   end
 end
-
-
