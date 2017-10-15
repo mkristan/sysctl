@@ -34,3 +34,6 @@ suites:
 - name: attributes-empty
   run_list:
     - recipe[sysctl_test::attributes_empty]
+- name: attributes-conf-file
+  run_list:
+    - recipe[sysctl_test::attributes-conf-file]
