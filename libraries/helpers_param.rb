@@ -28,6 +28,8 @@ module SysctlCookbook
           '/etc/sysctl.conf.local'
         when 'suse'
           '/etc/sysctl.conf' if node['platform_version'].to_f < 12.0
+        when 'amazon', 'rhel'
+          '/etc/sysctl.conf'
         else
           raise 'Unknown sysctl file location. Unsupported platform.'
         end
