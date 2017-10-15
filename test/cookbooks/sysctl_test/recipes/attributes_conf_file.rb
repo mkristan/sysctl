@@ -20,6 +20,7 @@
 
 # Testing saving the sysctl information to a combined .conf file
 node.override['sysctl']['allow_sysctl_conf'] = true
+node.save
 
 ::Chef::Recipe.send(:include, SysctlCookbook::SysctlHelpers::Param)
 
